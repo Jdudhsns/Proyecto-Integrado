@@ -1,0 +1,164 @@
+body.bg-login {
+  /* Aquí agregas tu imagen de fondo */
+  background: url("/Background-image.jpg") no-repeat center center/cover;
+  backdrop-filter: blur(3px);
+}
+
+.login-card {
+  width: 350px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-custom {
+  border: 2px solid #9acd32;
+  padding: 10px 20px;
+}
+
+.btn-custom {
+  background-color: #9acd32;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #7da024;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  background: url("/images/fondo-login.jpg") no-repeat center center/cover; /* Ajusta tu ruta si es necesario */
+  position: relative;
+}
+
+/* Dashboard Box */
+.dashboard-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px; /* Sidebar ancho fijo ahora */
+  background-color: #7da024;
+  height: 100%;
+  color: white;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar-item {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.divider {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar img {
+  width: 24px;
+  min-width: 24px;
+  margin-right: 12px;
+  filter: invert(1);
+}
+
+.sidebar span {
+  opacity: 1; /* Ahora el texto está siempre visible */
+  transition: opacity 0.3s ease;
+}
+
+/* Submenu Items (ocultos por defecto) */
+.submenu-items {
+  display: none;
+  flex-direction: column;
+}
+
+.submenu.active .submenu-items {
+  display: flex;
+}
+
+.submenu .sidebar-item {
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.submenu .sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submenu > a span:last-child {
+  transition: transform 0.3s ease;
+}
+#register-arbol-form .form-control,
+#register-arbol-form .form-select {
+  border: 2px solid #9acd32;
+  padding: 10px 20px;
+}
+
+#register-arbol-form button.btn-custom {
+  background-color: #9acd32;
+  color: white;
+  border: none;
+}
+
+#register-arbol-form button.btn-custom:hover {
+  background-color: #7da024;
+}
+#image-preview {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* Centrar el formulario de suelos y árboles */
+.dashboard-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#gestionar-arbol-box {
+  border: 2px solid #dc3545; /* rojo como tu diseño */
+  border-radius: 20px;
+}
+
+#gestionar-arbol-box .card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
